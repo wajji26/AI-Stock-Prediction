@@ -1,0 +1,10 @@
+{
+  "watch": ["src"],
+  "ext": "js,json",
+  "ignore": [
+    "ai-models",
+    "node_modules",
+    "**/venv/**",
+    "**/*.test.js"
+  ]
+}

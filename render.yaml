@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: stock-predict-api
+    runtime: docker
+    rootDir: backend/ai-models/price-prediction
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "8001"
+      - key: TF_CPP_MIN_LOG_LEVEL
+        value: "2"
